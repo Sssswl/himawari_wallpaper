@@ -1,0 +1,9 @@
+[Unit]
+Description=Update desktop wallpaper from the latest Himawari-8 image
+After=network-online.target graphical-session.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=@REPO_DIR@
+ExecStart=@REPO_DIR@/_env/bin/python @REPO_DIR@/himawari_wallpaper.py --max-canvas-fraction 0.7
