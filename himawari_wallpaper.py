@@ -17,7 +17,7 @@ from pathlib import Path
 from PIL import Image
 
 
-BASE_URL = "https://himawari8-dl.nict.go.jp/himawari8/img/D531106"
+BASE_URL = "https://himawari.asia/img/D531106"
 LATEST_URL = f"{BASE_URL}/latest.json"
 USER_AGENT = "himawari-wallpaper/1.0"
 XRANDR_SCREEN_RE = re.compile(r"\bcurrent\s+(\d+)\s+x\s+(\d+),")
