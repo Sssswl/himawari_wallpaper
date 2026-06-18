@@ -31,7 +31,7 @@ The wallpaper image is saved to:
 ~/.local/share/himawari-wallpaper/himawari_latest.png
 ```
 
-By default the script detects the current desktop size with `xrandr`, centers the satellite image, and caps it at 80% of the shorter screen dimension. You can override that:
+By default the script detects the current desktop size with `xrandr`, centers the satellite image, and caps it at 70% of the shorter screen dimension. You can override that:
 
 ```bash
 _env/bin/python himawari_wallpaper.py --canvas-size 2560x1440 --image-scale 0.7 --max-canvas-fraction 0.7

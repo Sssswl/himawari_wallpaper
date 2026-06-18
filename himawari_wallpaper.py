@@ -172,13 +172,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--image-scale",
         type=float,
-        default=0.8,
+        default=1.0,
         help="Satellite image size relative to the downloaded square before canvas fitting.",
     )
     parser.add_argument(
         "--max-canvas-fraction",
         type=float,
-        default=0.8,
+        default=1.0,
         help="Maximum satellite size as a fraction of the shorter canvas side.",
     )
     return parser.parse_args()
